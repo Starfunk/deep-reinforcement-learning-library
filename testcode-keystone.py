@@ -524,30 +524,3 @@ def cross_entropy_cost_derivative(a, y):
 	
 	return (a - y)
 	
-
-
-
-
-	
-net = Network([2,3,2], 0.1, 32)
-
-print(net.weights[0].shape)
-print()
-print(type(net.biases))
-
-minibatch = [[[2,2],[1,1]]]
-
-
-net.mini_batch_update_net(minibatch)
-
-# ~ image = [2,2]
-
-# ~ label = [1,0]
-
-# ~ print(net.weights)
-# ~ print(net.biases)
-
-# ~ net.backpropagation(image, label)
-
-
-
